@@ -1,0 +1,106 @@
+<!doctype html><!--[if IEMobile 7 ]>    <html class="no-js iem7" lang="es"> <![endif]--><!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Agencia Marketing - T2O media M&oacute;vil</title>
+		<meta name="description" content="Agencia Marketing Online, SEO, Optimizaci&oacute;n Campa&ntilde;as, Social Media y Performance" />
+		<meta name="keywords" content="agencia marketing,marketing resultados" />
+		<link rel="canonical" href="http://m.t2o.es/" />
+		<!-- Mobile Viewport-->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- Home Screen Icons  -->
+		<!-- For iPhone 4 - Retina display -->
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+		<!-- For first-generation iPad -->
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+		<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ -->
+		<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+		<!-- For Nokia devices -->
+		<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+		<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+		<meta http-equiv="cleartype" content="on">
+		<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/libs/modernizr-2.0.6.min.js"></script>
+		<link href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" rel="stylesheet" type="text/css"/>
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js" ></script>
+		<script>
+            $(document).live("mobileinit", function(){
+                $.mobile.ajaxLinksEnabled = false;
+                $.mobile.ajaxEnabled = false;
+            });        
+        </script>
+		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+		<script src="js/formulario.js"></script>	
+		<link rel="stylesheet" href="css/style.css">
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                 
+            ga('create', 'UA-11480823-15');
+            ga('send', 'pageview');
+                 
+        </script>
+	</head>
+	<body>
+		<div id="container" data-role="page" data-theme="e">
+			<div id="logo">
+				<a title="agencia de marketing online" href=""><img width="35%" src="http://www.t2o.es/assets/t2o-media-logo.png" alt="T2O media M&oacute;vil" /></a>
+			</div>
+			<div id="main">
+				<header>
+					<hgroup>
+					<h1>T2O media - Marketing Online</h1>
+					<h2>Somos una agencia de Marketing Online especializada en resultados</h2>
+					</hgroup>
+				</header>
+				<section>
+					<h2>Solicita Informaci&oacute;n</h2>
+					<div class="ui-bar-e ui-corner-all contact">
+						<form id="contact" action="contacto-ok.php" method="post" name="contacto" onsubmit=" return compruebaForm(this);">
+							<div data-role="fieldcontain" id="nombreDiv">
+								<label for="nombre" class="ui-hidden-accessible">Nombre y Apellidos</label>
+								<input required name="nombre" id="nombre" type="text" placeholder="Nombre y Apellidos" data-theme="f">
+							</div>
+							<div data-role="fieldcontain" id="empresaDiv">
+								<label for="empresa" class="ui-hidden-accessible">Empresa</label>
+								<input name="empresa" type="text" placeholder="Empresa" data-theme="f">
+							</div>
+							<div data-role="fieldcontain" id="emailDiv">
+								<label for="email" class="ui-hidden-accessible">Email</label>
+								<input required name="email" id="emailUsuario" pattern="[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9.-]+" type="email" placeholder="Correo Electr&oacute;nico" data-theme="f">
+							</div>
+							<div data-role="fieldcontain" id="telefonoDiv">
+								<label for="telefono" class="ui-hidden-accessible">Tel&eacute;fono</label>
+								<input required name="telefono" id="telefono" pattern="6\d{8}|9\d{8}" type="tel" placeholder="Tel&eacute;fono" data-theme="f" min="1">
+							</div>
+							<div data-role="fieldcontain" id="productoDiv">
+								<label for="producto" class="ui-hidden-accessible">Selecci&oacute;n de producto</label>
+								<select id="producto" name="producto" title="Producto" required >
+									<option value="">Selecci&oacute;n de producto</option>
+									<option value="SEO">SEO</option>
+									<option value="SEM">SEM</option>
+									<option value="SMM">SMM</option>
+									<option value="PERFORMANCE">Performance</option>
+								</select>
+							</div>
+							<div data-role="fieldcontain"><input name="continuar" onclick="submit()" type="button" value="Continuar"></div>
+						</form>
+					</div>
+				</section>	
+				<section>
+					<h2></h2>
+					<ul data-role="listview" data-inset="true" id="articleList"></ul>
+				</section>
+			</div>
+		</div>	
+		<!--! end of #container -->
+		<!-- JavaScript at the bottom for fast page loading -->
+		<script src="js/app.js"></script>
+		<script src="js/helper.js"></script>	
+	</body>
+</html>
